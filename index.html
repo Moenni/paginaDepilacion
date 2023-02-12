@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/93f40e3df7.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+
+    <title>Homepage</title>
+</head>
+<body>
+    <nav id="barraIzquierda">
+        
+        <div class="menu">
+            <a href="#" class="info" onclick="informacion()"><i class="fa-sharp fa-solid fa-info"></i>¿Qué es la depilación laser?</a>
+            <a href="#" class="contacto" onclick="contactame()"><i class="fa-sharp fa-solid fa-envelope"></i>Sobre Mi</a>
+        </div>
+    </nav>
+    <header id="encabezado">
+        <div id="objetivos">
+            <h1 class="obj">Siempre Bellas</h1>
+        </div>
+        <div id="progreso">
+            <div id="mibarra"></div>
+
+        </div>
+    </header>
+    <section id="principal">
+   
+        <div class="informacion" id="info">
+            <h1>Depilación Laser</h1>
+            <p>La depilación laser es un tratamiento dedicado a eliminar los vellos no deseados de forma permanente.
+                <br>
+            Desde las primeras sesiones vas a poder disfrutar de los resultados obtenidos.
+            <br>
+            <h4>¿Cuántas sesiones se necesitan?</h4>
+            <br>
+            <p>El número de sesiones dependerá de la superficie de piel que se va a tratar, el calibre y color del vello o la densidad del mismo. Lo habitual es se necesiten entre 6 y 8 sesiones, al finalizar las cuales se habrá eliminado en torno al 90% del vello de la zona tratada.  </p>
+            </p>
+        </div>
+    <div class="contactame" id="contacto">
+        <img src="img/imagen2.jpeg" alt="fotocontacto" class="entero" style="width:30%">
+        <div class="container">
+            <h3><b><i class="fa-sharp fa-solid fa-location-dot"></i>Localidad: Virreyes(San Fernando)</b></h3>
+            <h3><b><i class="fa-sharp fa-solid fa-phone"></i>Telefono:1161236307</b></h3>
+          
+     </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/imagen4.jpeg" class=""  alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/imagen5.jpeg" class="" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/imagen2.jpeg" class="" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </section>
+    <button class="open-button" onclick="openForm()">Contáctame</button>
+    <div class="formulario" id="miformulario">
+        <form action="mailto:aleemonzalvo@gmail.com" method="post" name="formulario" class="form-container">
+            
+            <label><button type="submit" class="btn" onclick="enviarFormulario()">Enviame un email</button></label>
+            <br>
+            <label><button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button></label>
+        </form>
+
+    </div>
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="/js/index.js"></script>
+</body>
+</html>
